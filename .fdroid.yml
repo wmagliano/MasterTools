@@ -1,0 +1,36 @@
+Categories:
+  - Security
+  - System
+License: MIT
+AuthorName: Walter Magliano
+AuthorEmail: ""
+SourceCode: https://github.com/wmagliano/MasterTools
+IssueTracker: https://github.com/wmagliano/MasterTools/issues
+
+AutoName: MasterTools
+Summary: Android frontend for Kali NetHunter tools
+Description: |
+  MasterTools is an Android frontend for running selected tools inside
+  Kali NetHunter.
+
+  Current tabs/features include:
+  * Nmap
+  * WhatWeb
+  * TestSSL
+  * MasterTools script launcher
+  * About
+
+  This app is intended for advanced users with a rooted device and
+  Kali NetHunter already installed.
+
+RepoType: git
+Repo: https://github.com/wmagliano/MasterTools.git
+
+Builds:
+  - versionName: "1.0"
+    versionCode: 1
+    commit: HEAD
+    subdir: .
+    gradle:
+      - yes
+    output: app/build/outputs/apk/debug/app-debug.apk
