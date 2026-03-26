@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/aboutTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Explore Open Services ver1.0"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="16dp" />
+
+        <TextView
+            android:id="@+id/aboutBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Frontend Android para ejecutar herramientas dentro de Kali NetHunter (/root/bin)  usando nh_run.sh y puertos.sh, pruebassl.sh, queweb.sh y mastertools.sh."
+            android:textSize="14sp"
+            android:lineSpacingExtra="4dp" />
+
+        <TextView
+            android:id="@+id/aboutDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="13sp"
+            android:typeface="monospace"
+            android:text="Author: Dr. Walter Magliano
+
+App package: com.wmagliano.mastertools
+
+Wrapper Android → Kali:
+/data/local/nhsystem/nh_run.sh
+
+Script principal en Kali:
+/root/bin/mastertools.sh
+
+Herramientas actuales:
+- Nmap
+- WhatWeb
+- TestSSL
+- MasterTools
+
+Modo de ejecución:
+su -c '/data/local/nhsystem/nh_run.sh &lt;comando&gt;'"
+            android:lineSpacingExtra="4dp" />
+
+    </LinearLayout>
+</ScrollView>
